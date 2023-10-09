@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Project 4</title>
+</head>
+<body>
+    <div class="outer">
+        <form>
+            <p>calc</p>
+
+
+        <input id="input1" type="text" maxlength="1000" placeholder="0">
+        <div class="input2">
+            <input class="button" type="button" value="7" onclick="input1.value += '7' ">
+            <input class="button" type="button" value="8" onclick="input1.value += '8' ">
+            <input class="button" type="button" value="9" onclick="input1.value += '9' ">
+            <input class="button" type="button" value="DEL" style="background-color: #647299; color: #FFFFFF;" onclick="input1.value = input1.value.toString().slice(0,-1)">
+            <input class="button" type="button" value="4" onclick="input1.value += '4' ">
+            <input class="button" type="button" value="5" onclick="input1.value += '5' ">
+            <input class="button" type="button" value="6" onclick="input1.value += '6' ">
+            <input class="button" type="button" value="+" onclick="input1.value += '+' ">            
+            <input class="button" type="button" value="1" onclick="input1.value += '1' ">
+            <input class="button" type="button" value="2" onclick="input1.value += '2' ">
+            <input class="button" type="button" value="3" onclick="input1.value += '3' ">
+            <input class="button" type="button" value="-" onclick="input1.value += '-' ">
+            <input class="button" type="button" value="." onclick="input1.value += '.' ">
+            <input class="button" type="button" value="0" onclick="input1.value += '0' ">
+            <input class="button" type="button" value="/" onclick="input1.value += '/' ">
+            <input class="button" type="button" value="x" onclick="input1.value += '*' ">
+            <button id="buttonres" type="reset">RESET</button>
+            <input id="buttoncal" type="button" value="=" onclick="input1.value = eval(input1.value)">
+            
+        </div>  
+    </div>
+    </form>
+
+</body>
+</html>
